@@ -1,0 +1,105 @@
+.skillTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-section{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    /* background-color: white; */
+}
+
+.timeline-items{
+    max-width: 65rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: rgb(50, 50, 50);
+    left: calc(50% - 1px);
+}
+
+.timeline-item{
+    margin-bottom: 20px;
+    width: 90%;
+    position: relative;
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date{
+    font-size: 18px;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background-color: rgb(50, 50, 50);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.timeline-content p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 747px) {
+    .timeline-items::before{
+        left: 35px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+}

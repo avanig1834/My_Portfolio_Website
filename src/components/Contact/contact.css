@@ -1,0 +1,82 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.writeme{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.contactDesc{
+    padding: 1rem;
+    text-align: center;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg{
+    font-size: medium;
+    width: 80%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(94, 92, 92);
+}
+
+::placeholder{
+    color: rgb(185, 181, 181);
+    font-weight: 300;
+}
+.submitBtn{
+    background: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 3.5rem;
+    margin: 2rem;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+}
+
